@@ -1,1 +1,1 @@
-# Video_framing
+与opencv有关的视频抽帧代码
