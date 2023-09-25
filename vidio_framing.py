@@ -1,8 +1,3 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 import sys
 import cv2
 import os
@@ -213,7 +208,7 @@ def cap_set(src :str, target :str, frame_num :int, interval :int):
                         break
                     else:
                         continue
-                        # 跳转到上一次的进度
+                # 跳转到上一次的进度
                 elif key == ord('T'):
                     loaded_text = load_text()
                     loaded_text_part = loaded_text.split('#')
@@ -247,17 +242,15 @@ def cap_set(src :str, target :str, frame_num :int, interval :int):
 
 print("操作方式：\nr自动播放/停止\ne后退\na逐帧后退\nd前进\nf逐帧前进\nb标记抽帧的初始位置\nn标记抽帧的结束位置\ns保存截取的视频\nt在终端里输入跳过的时间段\nT跳转到上一次观看的位置\nq退出\nz下一个视频\nx上一个视频\nc查看视频信息，并决定是否跳转别的视频\np记录信息")
 
-#a = input("视频文件地址*该文件夹仅存在视频*\n")
-#a = str(a)
-a = 'F:\project\\vidios'
-#b = input("保存图片地址\n")
-#b = str(b)
-b = 'F:\project\D01_20230525\\picture'
+# 视频文件地址
+a = input("视频文件地址*该文件夹仅存在视频*\n")
+a = str(a)
+# 保存抽帧图片
+b = input("保存图片地址\n")
+b = str(b)
+
 c = 7
 c = int(c)
 d = 6
 d = int(d)
 cap_set(a,b,c,d)
-
-# if __name__ == '__main__':
-#     cap_set("F:\project\D02_20230502090939.mp4", "F:\project\\now\\result", 7, 6)
